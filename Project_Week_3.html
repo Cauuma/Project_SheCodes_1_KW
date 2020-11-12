@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Living in Switzerland</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Quicksand", sans-serif;
+        background-image: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+        background-size: cover;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 60px;
+        font-weight: bold;
+        color: lavenderblush;
+      }
+
+      h2 {
+        text-align: center;
+        color: lavenderblush;
+      }
+      #header {
+        width: 90%;
+        margin: 0 auto;
+        height: 250px;
+        font-size: 26px;
+      }
+      #header > p {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      #Ready {
+        display: block;
+        margin: 30px auto;
+        padding: 10px;
+        font-size: 20px;
+        color: lavenderblush;
+        background-color: transparent;
+        border: 1px solid lavenderblush;
+        border-radius: 4px;
+        transition: all 200ms ease-in-out;
+      }
+
+      #Ready:hover {
+        background-color: #43889d;
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+      .container {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+
+      [class*="col-"] {
+        float: left;
+        min-height: 1px;
+      }
+
+      .col-2 {
+        width: 33.333%;
+        text-align: center;
+        transition: all 200ms ease;
+        margin-top: 50px;
+      }
+      .col-2 > div {
+        height: 500px;
+        margin: auto 50px;
+        padding: 10px 10px;
+        background-color: #7fa1ab;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px #43889d;
+      }
+      .col-2:hover {
+        transform: scale(1.1);
+      }
+      .picture {
+        height: 200px;
+        border-radius: 20px;
+        max-width: 90%;
+      }
+
+      .learn-more {
+        font-size: 20px;
+        padding: 5px;
+        margin-top: 20px;
+        background-color: transparent;
+        border: 1px solid lavenderblush;
+        border-radius: 4px;
+        color: lavenderblush;
+        transition: all 200ms ease-in-out;
+      }
+      .learn-more:hover {
+        background-color: #43889d;
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+      @media (max-width: 1050px) {
+        .col-2 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Living in Switzerland</h1>
+      <div id="header">
+        <p>
+          One of my best decisions was to move from Germany to Switzerland. The
+          beautiful nature, the mountains, the cheese, the wine and my fiancé
+          were the main reasons for me to take this step. Not everyone in my
+          family understood this, but I have to find my way to be happy. I would
+          like to invite you to dare a journey through Switzerland. If you click
+          on the pictures below you will find real treasures. And if you want to
+          learn more, click on the buttons. I would appreciate it very much.
+        </p>
+        <button id="Ready">Am I ready for Switzerland🧀🍷</button>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <div>
+            <h2>Mountains</h2>
+            <a
+              href="https://zermatt.roundshot.com/glacierparadise/"
+              target="_blank"
+              ><img
+                class="picture"
+                src="https://www.zermatt.ch/extension/portal-zermatt/var/storage/images/media/bibliothek/aussichten/fotopoints/riffelsee3/2732988-1-ger-DE/Riffelsee_front_embed.jpg"
+                alt="Pic of the Matterhorn"
+            /></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
+              veniam optio aut quod. Odit qui amet necessitatibus aliquam
+              corporis, deserunt, hic aliquid voluptatibus esse optio quis
+              eaque, labore beatae nobis!
+            </p>
+            <a
+              href="https://de.wikipedia.org/wiki/Schweizer_Alpen"
+              target="_blank"
+            >
+              <button class="learn-more">Learn More</button></a
+            >
+          </div>
+        </div>
+        <div class="col-2">
+          <div>
+            <h2>Cheese</h2>
+            <a
+              href="https://www.youtube.com/watch?v=3EDEM62Vt0c"
+              target="_blank"
+            >
+              <img
+                class="picture"
+                src="https://media01.stockfood.com/largepreviews/MzkyOTUzMjEw/12675910-Schweizer-Kaesefondue-im-Rechaud-mit-Glas-Kirschwasser-und-Brot.jpg"
+                alt="Cheesefondue"
+            /></a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+              facere obcaecati, ducimus at dolore adipisci voluptates pariatur?
+              Voluptatum numquam vitae accusamus ex necessitatibus nam fuga
+              placeat, consectetur neque, eius quisquam!
+            </p>
+            <a
+              href="https://de.wikipedia.org/wiki/K%C3%A4sefondue"
+              target="_blank"
+            >
+              <button class="learn-more">Learn More</button></a
+            >
+          </div>
+        </div>
+        <div class="col-2">
+          <div>
+            <h2>Nature</h2>
+            <a
+              href="https://www.youtube.com/watch?v=KuQWY7EizQM"
+              target="_blank"
+              ><img
+                class="picture"
+                src="https://littlecity.ch/wp-content/uploads/2016/11/flims-caumasee-herbst-2.jpg"
+                alt="Cauuma See from above"
+            /></a>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+              nam ipsum pariatur quam enim minus numquam accusantium asperiores
+              officiis temporibus quasi, harum autem perferendis voluptatibus.
+              Facilis eveniet quae alias a.
+            </p>
+            <a
+              href="https://de.wikipedia.org/wiki/Schweizer_Wanderwege"
+              target="_blank"
+            >
+              <button class="learn-more">Learn More</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function readyForSwitzerland() {
+        let firstName = prompt("What is your first name?").trim();
+        let age = prompt("How old are you").trim();
+        let answer = prompt(
+          "Do you like the mountains 🌄, the nature 🌱, Cheese 🧀? Answer with yes or no!"
+        )
+          .toLowerCase()
+          .trim();
+        let h1 = document.querySelector("h1");
+
+        if (age >= 18 && answer === "yes") {
+          h1.innerHTML =
+            "Yeah! " +
+            firstName +
+            ", you are ready to live in Switzerland!😁😍😎";
+        } else {
+          if (age > 18 || answer === "no") {
+            h1.innerHTML =
+              "Sorry " +
+              firstName +
+              ", you are not ready to live in Switzerland! 😭";
+          }
+        }
+      }
+      let checkbutton = document.querySelector("#Ready");
+      checkbutton.addEventListener("click", readyForSwitzerland);
+    </script>
+  </body>
+</html>
